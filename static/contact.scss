@@ -1,0 +1,82 @@
+body::before{
+    content: "";
+    background:url("./static/contact.jpg")no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity:0.6;
+}
+/* navbar */
+.list{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.list-items{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+.list-items a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+form input{
+    border: none;
+}
+
+form input,button{
+    border-radius: 10px;
+    font-family: 'Acme', sans-serif;
+    outline: none;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid red;
+}
+.nav::before{
+    content: "";
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 64px;
+    z-index: -3;
+
+}
+h2{
+    color:black;
+    width: 500px;
+    margin: 12px auto;
+    background:white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+/* Styling the for box */
+.box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.box input,textarea{
+    width: 500px;
+    margin: 12px auto;
+    padding: 12px;
+    border-radius: 12px;
+    outline: none;
+}
+/* Styling a submit button */
+.btn{
+width: 100px;
+padding: 12px;
+margin: 12px auto;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyWebApp-Home</title>
+  style
+    include ../static/main.scss
+  style
+    include ../static/contact.scss
+</head>
+
+<body>
+  <nav class="nav">
+    <ul class="list">
+      <li class="list-items"><a href="/"> Home</a></li>
+      <li class="list-items"><a href="/contact"> Contact Us</a></li>
+      <li class="list-items"><a href="/about"> About Us</a></li>
+      <li class="list-items"><a href="/services"> Services</a></li>
+      <form action="/">
+        <form action="/">
+          <input placeholder="Search" class="list-items" type="text">
+          <button class="list-items btn" type="submit">Search</button>
+        </form>
+    </ul>
+  </nav>
+  <h2>Fill the form and contact us for your concern</h2>
+  <h3>#{submit}</h3>
+  <form action="/contact" method="post">
+    <div class="contriner">
+      <section class="box">
+        <input required type="text" name="client" id="" placeholder="Enter the Name">
+        <input required type="phone" name="phone" id="" placeholder="Enter the Phone Number">
+        <input required type="email" name="email" id="" placeholder="Enter the Email">
+        <textarea placeholder="How can we help you" name="message" id="" cols="30" rows="10"></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </section>
+    </div>
+  </form>
+  script
+    include  ../static/contact.ts
+</body>
+
+</html>
