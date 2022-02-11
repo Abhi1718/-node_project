@@ -28,6 +28,18 @@ app.set('views', path.join(__dirname, "templates"))
 app.get('/abhi', function (req:Request, res:Response) {
   res.render('abhi')
 })
+app.get('/next', function (req:Request, res:Response,next:NextFunction) {
+  next()
+},
+function (req:Request, res:Response,next:NextFunction){
+  next()
+  res.render('abhi')
+}
+)
+app.get('/next', function (req:Request, res:Response,next:NextFunction) {
+  // next()
+  res.render('index')
+})
 app.get('/', function (req:Request, res:Response) {
   res.render('index', { title: 'Abhishek', message: 'Abhishek is a good programmer' })
 })
